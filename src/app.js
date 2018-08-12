@@ -13,12 +13,6 @@ import './styles/styles.scss';
 
 const store = configureStore();
 
-store.subscribe(() => {
-    const state = store.getState();
-    const visibleCompanies = getVisibleCompanies(state.companies, state.filters)
-    console.log(visibleCompanies);
-});
-
 const jsx = (
     <Provider store={ store }>
         <AppRouter />
