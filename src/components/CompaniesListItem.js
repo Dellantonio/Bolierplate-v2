@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import moment from 'moment';
 import numeral from 'numeral';
 
+
 const CompaniesListItem = (props) => (
     <div>
         <Link to={`/lista/${props.id}`}>{props.name}</Link>
@@ -14,3 +15,4 @@ const CompaniesListItem = (props) => (
 );
 
 export default connect()(CompaniesListItem);
+
