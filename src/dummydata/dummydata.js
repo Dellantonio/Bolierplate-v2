@@ -1,3 +1,5 @@
+
+
 export const defaultCompanies = [{
     id: '1',
     name: 'Vale do Rio Doce',
@@ -28,8 +30,7 @@ export const defaultCompanies = [{
     activity: 'Varejo',
     revenue: 1200000,
     lastFinancialReport: 500,
-},
-];
+}];
 
 export const defaultFiltersState = [{
     text: '',

@@ -7,12 +7,14 @@ import numeral from 'numeral';
 
 
 const CompaniesList = (props) => (
-    <div>   
-        <h1>Companies List</h1>
-        <h3>O Faturamento conjunto das empresas abaixo é: {
-            numeral(getRevenueTotals(props.companies)).format('$0,0.00')
-        }
-        </h3>
+    <div className="box-companies">   
+        <div className="box-companies__header">
+            <h1>Companies List</h1>
+            <h3>O Faturamento conjunto das empresas abaixo é: {
+                numeral(getRevenueTotals(props.companies)).format('$0,0.00')
+            }
+            </h3>
+        </div>    
         {props.companies.map((company, index) => {
             return <CompaniesListItem {...company} key={index}/>    
         })}

@@ -1,7 +1,11 @@
 import { defaultCompanies } from '../dummydata/dummydata';
 
-const companiesReducer = ( state = defaultCompanies , action ) => {
+const stateDefault = [];
+
+const companiesReducer = ( state = stateDefault , action ) => {
     switch (action.type){
+        case 'SET_COMPANIES': 
+            return action.companies;
         default: 
             return state;
     }

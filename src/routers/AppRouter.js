@@ -7,6 +7,7 @@ import PaginaNaoEncontrada from '../components/PaginaNaoEncontrada';
 import PaginaLista from '../components/PaginaLista';
 import PaginaAjuda from '../components/PaginaAjuda';
 import PaginaContato from '../components/PaginaContato';
+import LoginPage from '../components/LoginPage';
 
 
 const AppRouter = () => (
@@ -14,7 +15,8 @@ const AppRouter = () => (
     <div>
         <Header />
         <Switch>
-            <Route path="/" component={ PaginaInicial } exact={true}/> 
+            <Route path="/" component={ LoginPage } exact={true}/>
+            <Route path="/inicio" component={ PaginaInicial }/> 
             <Route path="/lista/:id" component={PaginaLista} />
             <Route path="/ajuda" component={PaginaAjuda} />
             <Route path="/contato" component={PaginaContato} />
